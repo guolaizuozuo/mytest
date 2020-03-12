@@ -1,0 +1,15 @@
+server:
+  port: 9999
+spring:
+  jms:
+    pub-sub-domain: true
+  activemq:
+    broker-url: failover:tcp://192.168.149.150:61616
+    in-memory: true
+    pool:
+      enabled: false
+    packages:
+      trust-all: true
+    user: admin
+    password: admin
+

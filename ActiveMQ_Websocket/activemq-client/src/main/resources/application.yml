@@ -1,0 +1,18 @@
+server:
+  port: 7778
+spring:
+  jms:
+    pub-sub-domain: true
+  activemq:
+    broker-url: tcp://192.168.149.150:61616
+    in-memory: true
+    pool:
+      enabled: false
+    packages:
+      trust-all: true
+    user: admin
+    password: admin
+
+activeQueueClientName: client.service.queue
+activeQueueNewsName: news.service.queue
+activeQueueUserName: user.service.queue
